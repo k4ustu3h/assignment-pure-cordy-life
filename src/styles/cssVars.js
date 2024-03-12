@@ -7,12 +7,18 @@ export const cssVars = experimental_extendTheme({
 				primary: {
 					main: "#4CAF4F",
 				},
+				secondary: {
+					main: "#4D4D4D",
+				},
 			},
 		},
 		light: {
 			palette: {
 				primary: {
 					main: "#4CAF4F",
+				},
+				secondary: {
+					main: "#4D4D4D",
 				},
 			},
 		},
@@ -40,9 +46,16 @@ export const cssVars = experimental_extendTheme({
 	},
 	typography: {
 		fontFamily: "Inter",
+		h3: {
+			fontSize: 44.55,
+			fontWeight: 600,
+		},
 		navbar: {
 			fontSize: 11.14,
 			fontWeight: 500,
+		},
+		subtitle2: {
+			fontSize: 11.14,
 		},
 	},
 });
