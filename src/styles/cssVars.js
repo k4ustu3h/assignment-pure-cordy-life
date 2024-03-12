@@ -50,6 +50,7 @@ export const cssVars = experimental_extendTheme({
 			fontSize: 44.55,
 			fontWeight: 600,
 		},
+		h5: { fontSize: 25.6, fontWeight: 600 },
 		navbar: {
 			fontSize: 11.14,
 			fontWeight: 500,
