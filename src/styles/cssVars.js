@@ -55,6 +55,7 @@ export const cssVars = experimental_extendTheme({
 			fontWeight: 500,
 		},
 		subtitle2: {
+			color: "#717171",
 			fontSize: 11.14,
 		},
 	},

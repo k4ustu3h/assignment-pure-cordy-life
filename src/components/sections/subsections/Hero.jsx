@@ -24,7 +24,7 @@ export default function Hero() {
 				<Typography color="primary" variant="h3">
 					from 8 years
 				</Typography>
-				<Typography color="#717171" mt="11px" variant="subtitle2">
+				<Typography mt="11px" variant="subtitle2">
 					Where to grow your business as a photographer: site or
 					social media?
 				</Typography>
