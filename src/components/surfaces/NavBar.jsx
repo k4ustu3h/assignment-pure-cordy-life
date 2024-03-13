@@ -24,7 +24,7 @@ function Arrow() {
 export default function NavBar() {
 	const pages = ["Home", "Features", "Community", "Blog", "Pricing"];
 	return (
-		<AppBar color="transparent" sx={{ px: "100px" }}>
+		<AppBar color="transparent" position="absolute" sx={{ px: "100px" }}>
 			<Toolbar>
 				<Box display="flex">
 					<Typography>P</Typography>

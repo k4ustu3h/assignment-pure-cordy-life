@@ -7,6 +7,7 @@ import UnlockIllustration from "../../../../assets/body/unlock/UnlockIllustratio
 export default function Unlock() {
 	return (
 		<Box
+			alignItems="center"
 			display="flex"
 			flexDirection="row"
 			justifyContent="space-evenly"
