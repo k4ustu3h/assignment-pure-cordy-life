@@ -35,7 +35,7 @@ export default function Community() {
 			<Box
 				display="flex"
 				flexDirection="row"
-				justifyContent="space-between"
+				justifyContent="space-evenly"
 				mt="11px"
 				mx="100px"
 			>

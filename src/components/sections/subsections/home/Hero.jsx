@@ -2,7 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Illustration from "../../../../assets/home/hero/Illustration";
+import HeroIllustration from "../../../../assets/home/hero/HeroIllustration";
 
 export default function Hero() {
 	return (
@@ -32,7 +32,7 @@ export default function Hero() {
 					Register
 				</Button>
 			</Box>
-			<Illustration />
+			<HeroIllustration />
 		</Box>
 	);
 }

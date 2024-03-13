@@ -1,7 +1,7 @@
 import React from "react";
 import SvgIcon from "@mui/material/SvgIcon";
 
-export default function Illustration() {
+export default function HeroIllustration() {
 	return (
 		<SvgIcon sx={{ height: 274, width: 284 }}>
 			<svg
