@@ -2,12 +2,12 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import ClientLogo0 from "../../../assets/client_logos/ClientLogo0";
-import ClientLogo1 from "../../../assets/client_logos/ClientLogo1";
-import ClientLogo2 from "../../../assets/client_logos/ClientLogo2";
-import ClientLogo3 from "../../../assets/client_logos/ClientLogo3";
-import ClientLogo4 from "../../../assets/client_logos/ClientLogo4";
-import ClientLogo5 from "../../../assets/client_logos/ClientLogo5";
+import ClientLogo0 from "../../../../assets/home/clients/ClientLogo0";
+import ClientLogo1 from "../../../../assets/home/clients/ClientLogo1";
+import ClientLogo2 from "../../../../assets/home/clients/ClientLogo2";
+import ClientLogo3 from "../../../../assets/home/clients/ClientLogo3";
+import ClientLogo4 from "../../../../assets/home/clients/ClientLogo4";
+import ClientLogo5 from "../../../../assets/home/clients/ClientLogo5";
 
 export default function Clients() {
 	return (

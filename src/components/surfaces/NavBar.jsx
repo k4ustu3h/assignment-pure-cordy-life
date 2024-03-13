@@ -46,7 +46,7 @@ export default function NavBar() {
 					);
 				})}
 				<Button variant="filled">
-					Register
+					Register Now
 					<Arrow />
 				</Button>
 			</Toolbar>
