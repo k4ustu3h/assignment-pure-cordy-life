@@ -43,6 +43,14 @@ export const cssVars = experimental_extendTheme({
 				},
 			],
 		},
+		MuiLink: {
+			styleOverrides: {
+				root: {
+					color: "inherit",
+					textDecoration: "none",
+				},
+			},
+		},
 	},
 	typography: {
 		fontFamily: "Inter",
