@@ -54,6 +54,10 @@ export const cssVars = experimental_extendTheme({
 	},
 	typography: {
 		fontFamily: "Inter",
+		footer: {
+			color: "#f5F7fa",
+			fontSize: 9.74,
+		},
 		h3: {
 			fontSize: 44.55,
 			fontWeight: 600,
