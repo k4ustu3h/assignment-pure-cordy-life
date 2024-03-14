@@ -5,6 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Lorem from "./subsections/footer/Lorem";
+import TextBox from "./subsections/footer/TextBox";
 
 export default function Footer() {
 	const icons = [
@@ -119,6 +120,7 @@ export default function Footer() {
 						<Typography color="white" fontWeight={600} mb="16.71px">
 							Stay up to date
 						</Typography>
+						<TextBox />
 					</Box>
 				</Box>
 			</Stack>
