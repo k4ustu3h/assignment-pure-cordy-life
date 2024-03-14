@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Icon } from "@iconify-icon/react";
-import { Input as BaseInput, inputClasses } from "@mui/base/Input";
-import { styled } from "@mui/system";
 import { Button } from "@mui/base";
+import { Icon } from "@iconify-icon/react";
+import { Input as BaseInput } from "@mui/base/Input";
+import { styled } from "@mui/system";
 
 const Input = React.forwardRef(function CustomInput(props, ref) {
 	const { slots, ...other } = props;
@@ -21,11 +21,6 @@ const Input = React.forwardRef(function CustomInput(props, ref) {
 });
 
 Input.propTypes = {
-	/**
-	 * The components used for each slot inside the InputBase.
-	 * Either a string to use a HTML element or a component.
-	 * @default {}
-	 */
 	slots: PropTypes.shape({
 		input: PropTypes.elementType,
 		root: PropTypes.elementType,
@@ -36,14 +31,16 @@ Input.propTypes = {
 export default function TextBox() {
 	return (
 		<Input
+			className="input"
 			placeholder="Your email address"
 			endAdornment={
 				<InputAdornment>
-					<IconButton
-						size="small"
-						aria-label="toggle password visibility"
-					>
-						<Icon icon="lucide:send" width="24" height="24" />
+					<IconButton size="small">
+						<Icon
+							height="12.53px"
+							icon="lucide:send"
+							width="12.53px"
+						/>
 					</IconButton>
 				</InputAdornment>
 			}
@@ -53,57 +50,57 @@ export default function TextBox() {
 
 const InputRoot = styled("div")(
 	() => `
-  border-radius: 5.57px;
-  color: #D9DBE1;
-  background: #ffffff33;
-  border: 0;
-  display: flex;
   align-items: center;
+  background: #ffffff33;
+  border-radius: 5.57px;
+  display: flex;
+  height: 27.84px;
   justify-content: center;
-
-
-  &.${inputClasses.focused} {
-    border-color: #00000000;
-    box-shadow:  #00000000;
-  }
-
-  &:hover {
-    border-color: none;
-  }
-
-  // firefox
+  width: 177.5px;
   &:focus-visible {
     outline: 0;
+  }
+  &:hover {
+    border-color: none;
   }
 `
 );
 
 const InputElement = styled("input")(
 	() => `
-  font-family: inherit;
-  flex-grow: 1;
-  color: #D9DBE1;
   background: none;
   border: none;
-  padding: 8px 12px;
+  color: #D9DBE1;
+  flex-grow: 1;
+  font-size: 9.74px;
+  height: 14px;
+  outline: 0;
+  padding: 8.35px;
+  width: 88px;
+  ::placeholder {
+	color: #d9dbe1;
+  }
+  ::-ms-input-placeholder {
+	color: #d9dbe1;
+  }
 `
 );
 
 const IconButton = styled(Button)(
 	() => `
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  border: none;
   background: inherit;
+  border: none;
+  color: #fff;
   cursor: pointer;
-  color: #fff
+  display: inline-flex;
+  justify-content: center;
   `
 );
 
 const InputAdornment = styled("div")`
-	margin: 8px;
-	display: inline-flex;
 	align-items: center;
+	display: inline-flex;
 	justify-content: center;
+	margin: 8px;
 `;
