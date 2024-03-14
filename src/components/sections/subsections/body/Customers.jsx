@@ -1,17 +1,19 @@
-import { Box, Link, Stack, Typography } from "@mui/material";
 import React from "react";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 import Arrow from "../../../../assets/Arrow";
-import tesla from "../../../../assets/body/customers/tesla.jpg";
 import ClientLogo0 from "../../../../assets/home/clients/ClientLogo0";
 import ClientLogo1 from "../../../../assets/home/clients/ClientLogo1";
 import ClientLogo2 from "../../../../assets/home/clients/ClientLogo2";
 import ClientLogo3 from "../../../../assets/home/clients/ClientLogo3";
 import ClientLogo4 from "../../../../assets/home/clients/ClientLogo4";
 import ClientLogo5 from "../../../../assets/home/clients/ClientLogo5";
+import tesla from "../../../../assets/body/customers/tesla.jpg";
 
 function Meet() {
 	return (
-		<Link color="#4CAF4F" fontSize="13.92px" fontWeight={600} href="/">
+		<Link fontSize="13.92px" fontWeight={600} href="/">
 			Meet all customers <Arrow />
 		</Link>
 	);
@@ -36,23 +38,21 @@ export default function Customers() {
 				px="100px"
 				py="22px"
 			>
-				<Box height="226.92px" width="226.92px">
-					<img
-						src={tesla}
-						style={{
-							borderRadius: "5.57px",
-							width: "100%",
-							height: "100%",
-							objectFit: "cover",
-						}}
-					/>
-				</Box>
+				<img
+					src={tesla}
+					style={{
+						borderRadius: "5.57px",
+						height: "226.92px",
+						objectFit: "cover",
+						width: "226.92px",
+					}}
+				/>
 				<Box ml="54px" width="520.66px">
 					<Typography
-						mb="11px"
 						color="#717171"
 						fontSize="11.14px"
 						fontWeight={500}
+						mb="11px"
 					>
 						Maecenas dignissim justo eget nulla rutrum molestie.
 						Maecenas lobortis sem dui, vel rutrum risus tincidunt
@@ -70,8 +70,8 @@ export default function Customers() {
 					</Typography>
 					<Typography
 						color="primary"
-						fontWeight="600"
 						fontSize="13.92px"
+						fontWeight="600"
 					>
 						Tim Smith
 					</Typography>
@@ -79,11 +79,11 @@ export default function Customers() {
 						British Dragon Boat Racing Association
 					</Typography>
 					<Box
-						display="flex"
-						mt="22px"
-						justifyContent="space-between"
-						fontSize="34px"
 						alignItems="center"
+						display="flex"
+						fontSize="34px"
+						justifyContent="space-between"
+						mt="22px"
 					>
 						{icons.map((icon) => {
 							return icon;

@@ -45,10 +45,10 @@ export const cssVars = experimental_extendTheme({
 		},
 		MuiLink: {
 			styleOverrides: {
-				root: {
-					color: "inherit",
+				root: ({ theme }) => ({
+					color: theme.palette.primary.main,
 					textDecoration: "none",
-				},
+				}),
 			},
 		},
 	},

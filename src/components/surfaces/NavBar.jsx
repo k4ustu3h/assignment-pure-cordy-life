@@ -19,7 +19,13 @@ export default function NavBar() {
 				<Box style={{ flexGrow: 1 }}></Box>
 				{pages.map((page) => {
 					return (
-						<Link href="/" key={page} mr="22px" variant="navbar">
+						<Link
+							color="#4d4d4d"
+							href="/"
+							key={page}
+							mr="22px"
+							variant="navbar"
+						>
 							{page}
 						</Link>
 					);
